@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    width: calc(100% - 2rem); /*2 rem is margin*/
+    margin: 1rem 1rem 0 1rem;
+}
+
+#logo {
+    max-height: 2.5rem;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+#menu-icon {
+    max-height: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+    nav {
+        display: flex;
+        align-items: center;
+
+    }
+    #menu-icon {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    header {
+        width: calc(100% - 4rem); /*2 rem is margin*/
+        margin: 2rem 2rem 0 2rem;
+    }
+}
