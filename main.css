@@ -49,6 +49,38 @@ h1 {
     height: 19px;
 }
 
+.section-header {
+    color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 4rem 0 2rem 0;
+}
+
+.underline {
+    height: 4px;
+    width: 150%;
+    background-color: var(--accent-color);
+}
+
+.icon {
+    height: 1rem;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.7s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 @media screen and (min-width: 1000px) {
     html {
         font-size: 20px;

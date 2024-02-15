@@ -1,0 +1,45 @@
+#about-company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-company-content-wrapper {
+    background-image:
+            linear-gradient(to right, rgba(36,36,36,1) 0%, rgba(36,36,36,0.85) 45%, rgba(36,36,36,0.66) 100%),
+            url('assets/mechanics.png');
+}
+
+#about-company-content {
+    display: flex;
+    margin: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#about-company-content > p {
+    max-width: 40%;
+}
+
+#company-existence {
+    background-image:
+            linear-gradient(to right, rgba(36,36,36,1) 0%, rgba(36,36,36,0.85) 45%, rgba(36,36,36,0.66) 100%),
+            url('assets/mechanics.png');
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 2rem;
+    box-shadow: 0px 1px 0px rgba(3, 7, 18, 0.02),
+    2px 3px 2px rgba(3, 7, 18, 0.03),
+    4px 7px 4px rgba(3, 7, 18, 0.05),
+    8px 12px 8px rgba(3, 7, 18, 0.06),
+    12px 19px 12px rgba(3, 7, 18, 0.08);
+}
+
+#company-existence > h1 {
+    font-size: 2rem;
+}

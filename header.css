@@ -3,8 +3,18 @@ header {
     justify-content: space-between;
     align-content: center;
     position: fixed;
-    width: calc(100% - 2rem); /*2 rem is margin*/
-    margin: 1rem 1rem 0 1rem;
+    width: calc(100%);
+    padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.header-after-scroll {
+    background-color: #242424;
+    z-index: 1000;
+    box-shadow: 0px 1px 0px rgba(3, 7, 18, 0.02),
+    2px 3px 2px rgba(3, 7, 18, 0.03),
+    4px 7px 4px rgba(3, 7, 18, 0.05),
+    8px 12px 8px rgba(3, 7, 18, 0.06),
+    12px 19px 12px rgba(3, 7, 18, 0.08);
 }
 
 #logo {
@@ -40,7 +50,10 @@ nav ul {
 
 @media screen and (min-width: 700px) {
     header {
-        width: calc(100% - 4rem); /*2 rem is margin*/
-        margin: 2rem 2rem 0 2rem;
+        padding: 2rem 2rem 1rem 2rem;
+    }
+
+    .header-after-scroll {
+        padding-top: 1rem;
     }
 }
