@@ -73,7 +73,7 @@ h1 {
     position: relative;
     transform: translateY(50px);
     opacity: 0;
-    transition: 0.7s all ease;
+    transition: 0.7s all ease-in;
 }
 
 .reveal.active {
