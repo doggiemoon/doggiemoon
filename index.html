@@ -25,133 +25,152 @@
             </ul>
         </nav>
     </header>
-<main>
-    <section id="landing-page">
-        <div id="select-language">
-            <div>PL</div>
-            <div>EN</div>
-            <div>RU</div>
-        </div>
-        <div id="landing-page-content-wrapper">
-            <div id="landing-page-content">
-                <div id="landing-page-text">
-                    <h1>POMOC DROGOWA 24/7</h1>
-                    <h1 hidden="hidden">LOGISTYKA, WYNAJEM SPRZĘTU</h1>
-                    <p>Jesteśmy ekspertami w zakresie całodobowej pomocy drogowej. Wsparciem drogowym zajmujemy się od początku istnienia firmy, a 29 lat praktyki sprawiły, że o pomocy drogowej wiemy prawie wszystko.</p>
-                </div>
-                <div id="landing-page-contact-button-wrapper">
-                    <button class="ghost-button">Kontakt <img src="assets/Next.png"/> </button>
-                </div>
+
+    <main>
+        <section id="landing-page">
+            <div id="select-language" hidden>
+                <div>PL</div>
+                <div>EN</div>
+                <div>RU</div>
             </div>
 
             <div id="gallery-items">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div id="gallery-item-1" class="gallery-item">
+                    <h1>POMOC DROGOWA 24/7</h1>
+                    <p>Jesteśmy ekspertami w zakresie całodobowej pomocy drogowej.
+                        Wsparciem drogowym zajmujemy się od początku istnienia firmy,
+                        a 29 lat praktyki sprawiły, że o pomocy drogowej wiemy prawie wszystko.
+                    </p>
+                    <button class="ghost-button">Kontakt<img src="assets/Next.png"/></button>
+                </div>
+                <div id="gallery-item-2" class="gallery-item" style="display: none">
+                    <h1>LOGISTYKA, WYNAJEM SPRZETU</h1>
+                    <p>Naszym Klientom dostarczamy rozwiązań z zakresu logistyki.
+                        Oferujemy wynajem sprzętu specjalistycznego,
+                        w ramach którego zapewniamy wsparcie dźwigowe i podnośnikowe.
+                    </p>
+                    <button class="ghost-button">Kontakt<img src="assets/Next.png"/></button>
+                </div>
+                <div id="gallery-item-3" class="gallery-item" style="display: none">
+                    <h1>SKLEP</h1>
+                    <p>Zapraszamy do zapoznania się z ofertą naszego sklepu motoryzacyjnego.
+                        Prowadzimy sprzedaż nowych oraz używanych części do samochodów osobowych
+                        i dostawczych najpopularniejszych światowych marek.
+                    </p>
+                    <button class="ghost-button">Kontakt<img src="assets/Next.png"/></button>
+                </div>
+                <div id="gallery-item-4" class="gallery-item" style="display: none">
+                    <h1>STACJA KONTROLI POJAZDOW</h1>
+                    <p>Prowadzimy stację kontroli pojazdów, oferującą przeglądy samochodów do 3,5 tony.
+                    </p>
+                    <button class="ghost-button">Kontakt<img src="assets/Next.png"/></button>
+                </div>
+                <div id="gallery-item-5" class="gallery-item" style="display: none">
+                    <h1>KASACJA</h1>
+                    <p>Specjalizujemy się w usługach kasacji.
+                        Skupujemy samochody wszystkich marek i roczników,
+                        niezależnie od ich stanu technicznego – przyjmujemy także pojazdy uszkodzone.
+                    </p>
+                    <button class="ghost-button">Kontakt<img src="assets/Next.png"/></button>
+                </div>
+            </div>
+
+            <div id="gallery-items-nav">
+                <div class="gallery-items-nav-active" onclick="changeLandingPageContent(1)"></div>
+                <div onclick="changeLandingPageContent(2)"></div>
+                <div onclick="changeLandingPageContent(3)"></div>
+                <div onclick="changeLandingPageContent(4)"></div>
+                <div onclick="changeLandingPageContent(5)"></div>
             </div>
 
             <div id="social-media">
                 <img src="assets/facebook-icon.png" alt="facebook"/>
                 <img src="assets/tiktok-icon.png" alt="tiktok"/>
+                <img src="assets/instagram-icon.png" alt="instagram"/>
             </div>
-        </div>
+        </section>
 
-<!--        <div id="landing-page-end">-->
-<!--        </div>-->
-    </section>
+        <section id="offers">
+            <div class="section-header">
+                <h1>Oferta</h1>
+                <div class="underline"></div>
+            </div>
 
-    <section id="offers">
-        <div class="section-header">
-            <h1>Oferta</h1>
-            <div class="underline"></div>
-        </div>
+            <div class="offer">
+                <div class="offer-content">
+                    <h1>POMOC DROGOWA 24/7</h1>
+                    <p>
+                        Nasza kompleksowa pomoc assistance jest dostępna 24 godziny na dobę przez siedem dni w tygodniu. Jesteśmy ekspertami w zakresie całodobowej pomocy drogowej. Wsparciem drogowym zajmujemy się od początku istnienia firmy, a dwadzieścia pięć lat praktyki sprawiły, że o pomocy drogowej wiemy wszystko.
+                    </p>
+                    <button class="filled-button">Więcej...</button>
+                </div>
+                <img class="offer-image" src="assets/mechanics.png"/>
+            </div>
 
-        <div class="offer">
-            <div class="offer-content">
-                <h1>POMOC DROGOWA 24/7</h1>
-                <p>
-                    Nasza kompleksowa pomoc assistance jest dostępna 24 godziny na dobę przez siedem dni w tygodniu. Jesteśmy ekspertami w zakresie całodobowej pomocy drogowej. Wsparciem drogowym zajmujemy się od początku istnienia firmy, a dwadzieścia pięć lat praktyki sprawiły, że o pomocy drogowej wiemy wszystko.
+            <div class="offer reveal">
+                <div class="offer-content">
+                    <h1>LOGISTYKA</h1>
+                    <p>
+                        Naszym Klientom dostarczamy rozwiązań z zakresu logistyki. Oferujemy wynajem sprzętu specjalistycznego, w ramach którego zapewniamy wsparcie dźwigowe i podnośnikowe. Do każdego zlecenia podchodzimy indywidualnie, dostosowując ofertę usług dźwigowych do konkretnych potrzeb Klienta.
+                    </p>
+                    <button class="filled-button">Więcej...</button>
+                </div>
+                <img class="offer-image" src="assets/mechanics.png"/>
+            </div>
+
+            <div class="offer reveal">
+                <div class="offer-content">
+                    <h1>SKLEP</h1>
+                    <p>
+                        Zapraszamy do zapoznania się z ofertą naszego sklepu motoryzacyjnego. Prowadzimy sprzedaż nowych oraz używanych części do samochodów osobowych i dostawczych najpopularniejszych światowych marek. Gwarantujemy: bogaty asortyment części zamiennych, codzienne dostawy oraz możliwość negocjacji cen.
+                    </p>
+                    <button class="filled-button">Więcej...</button>
+                </div>
+                <img class="offer-image" src="assets/mechanics.png"/>
+            </div>
+
+            <div class="offer reveal">
+                <div class="offer-content">
+                    <h1>STACJA KONTROLI POJAZDÓW</h1>
+                    <p>
+                        Prowadzimy stację kontroli pojazdów, oferującą przeglądy samochodów do 3,5 tony. Obsługujemy wszystkie rodzaje pojazdów, w tym: samochody osobowe i ciężarowe, motorowery i motocykle, a także ciągniki rolnicze. Wykonujemy też badania techniczne przyczep i samochodów sprowadzanych z zagranicy.
+                    </p>
+                    <button class="filled-button">Więcej...</button>
+                </div>
+                <img class="offer-image" src="assets/mechanics.png"/>
+            </div>
+        </section>
+
+        <section id="about-company">
+            <div class="section-header">
+                <h1>O firmie</h1>
+                <div class="underline"></div>
+            </div>
+
+            <div id="company-existence">
+                <h1>Ponad 30 lat istnienia na rynku</h1>
+            </div>
+        </section>
+    </main>
+
+    <br><br><br><br>
+    <hr>
+
+    <footer>
+        <p>© 2023 Transdźwig S.J. Zawadzcy, Wszelkie prawa zastrzeżone.</p>
+        <div id="footer-contact">
+            <div class="footer-contact-option">
+                <img class="icon" src="assets/phone-icon.png">
+                <p>+48 87 643 10 60</p>
+            </div>
+            <div class="footer-contact-option">
+                <img class="icon" src="assets/email-icon.png">
+                <p>sekretariat@transdzwig.pl
                 </p>
-                <button class="ghost-button">Czytaj wiecej</button>
             </div>
-            <img class="offer-image" src="assets/mechanics.png"/>
         </div>
+    </footer>
 
-        <div class="offer reveal">
-            <div class="offer-content">
-                <h1>LOGISTYKA</h1>
-                <p>
-                    Naszym Klientom dostarczamy rozwiązań z zakresu logistyki. Oferujemy wynajem sprzętu specjalistycznego, w ramach którego zapewniamy wsparcie dźwigowe i podnośnikowe. Do każdego zlecenia podchodzimy indywidualnie, dostosowując ofertę usług dźwigowych do konkretnych potrzeb Klienta.
-                </p>
-                <button class="ghost-button">Czytaj wiecej</button>
-            </div>
-            <img class="offer-image" src="assets/mechanics.png"/>
-        </div>
-
-        <div class="offer reveal">
-            <div class="offer-content">
-                <h1>SKLEP</h1>
-                <p>
-                    Zapraszamy do zapoznania się z ofertą naszego sklepu motoryzacyjnego. Prowadzimy sprzedaż nowych oraz używanych części do samochodów osobowych i dostawczych najpopularniejszych światowych marek. Gwarantujemy: bogaty asortyment części zamiennych, codzienne dostawy oraz możliwość negocjacji cen.
-                </p>
-                <button class="ghost-button">Czytaj wiecej</button>
-            </div>
-            <img class="offer-image" src="assets/mechanics.png"/>
-        </div>
-
-        <div class="offer reveal">
-            <div class="offer-content">
-                <h1>STACJA KONTROLI POJAZDÓW</h1>
-                <p>
-                    Prowadzimy stację kontroli pojazdów, oferującą przeglądy samochodów do 3,5 tony. Obsługujemy wszystkie rodzaje pojazdów, w tym: samochody osobowe i ciężarowe, motorowery i motocykle, a także ciągniki rolnicze. Wykonujemy też badania techniczne przyczep i samochodów sprowadzanych z zagranicy.
-                </p>
-                <button class="ghost-button">Czytaj wiecej</button>
-            </div>
-            <img class="offer-image" src="assets/mechanics.png"/>
-        </div>
-    </section>
-
-    <section id="about-company">
-        <div class="section-header">
-            <h1>O firmie</h1>
-            <div class="underline"></div>
-        </div>
-
-<!--        <div id="about-company-content-wrapper">-->
-<!--            <div id="about-company-content">-->
-<!--                <h1>Usługi dźwigowe, kasacja - Transdźwig S.J. Zawadzcy - Augustów</h1>-->
-<!--                <p>-->
-<!--                    Specjalizujemy się w usługach dźwigowych, które realizujemy na zlecenie Klientów indywidualnych oraz firm z kraju i z zagranicy. Działamy na terenie Augustowa i okolic, oferując całodobową pomoc drogową. Dysponujemy specjalistycznym sprzętem, w tym: dźwigami, podnośnikami i holownikami, które udostępniamy również na wynajem. Nasza oferta obejmuje także mechanikę pojazdową. Prowadzona przez nas stacja kontroli pojazdów oferuje wykonanie wszelkich niezbędnych badań technicznych. Oferujemy także sprzedaż nowych i używanych części motoryzacyjnych oraz usługi demontażu pojazdów. Gwarantujemy solidność i atrakcyjne ceny usług.-->
-<!--                </p>-->
-<!--                <button class="ghost-button">Czytaj więcej</button>-->
-<!--            </div>-->
-<!--        </div>-->
-
-        <div id="company-existence">
-            <h1>Ponad 30 lat istnienia na rynku</h1>
-        </div>
-    </section>
-</main>
-<br>
-<br>
-<br>
-<br><hr>
-<footer>
-    <p>© 2023 Transdźwig S.J. Zawadzcy, Wszelkie prawa zastrzeżone.</p>
-    <div id="footer-contact">
-        <div class="footer-contact-option">
-            <img class="icon" src="assets/phone-icon.png">
-            <p>+48 87 643 10 60</p>
-        </div>
-        <div class="footer-contact-option">
-            <img class="icon" src="assets/email-icon.png">
-            <p>sekretariat@transdzwig.pl
-            </p>
-        </div>
-    </div>
-</footer>
-<script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

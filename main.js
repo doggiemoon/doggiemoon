@@ -9,10 +9,10 @@ window.onscroll = function () {
 
 let reveals = document.querySelectorAll(".reveal");
 function reveal() {
-    for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 25;
+    for (let i = 0; i < reveals.length; i++) {
+        let windowHeight = window.innerHeight;
+        let elementTop = reveals[i].getBoundingClientRect().top;
+        let elementVisible = 25;
 
         if (elementTop < windowHeight - elementVisible || elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
@@ -24,3 +24,42 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 reveal();
+
+let current_gallery_item = 1;
+let changeLandingPageContentInterval = null;
+let changeLandingPageContentTimeout = null;
+
+function setAutoChangeLandingPage() {
+    changeLandingPageContentInterval = setInterval(autoChangeLandingPageContent, 5000);
+}
+
+setAutoChangeLandingPage();
+
+function autoChangeLandingPageContent() {
+    document.querySelector("#gallery-items-nav div:nth-child(" + current_gallery_item + ")").classList.remove("gallery-items-nav-active");
+    document.querySelector("#gallery-items div:nth-child(" + current_gallery_item + ")").style.display = "none";
+
+    current_gallery_item++;
+    if (current_gallery_item === 6) {
+        current_gallery_item = 1;
+    }
+
+    document.querySelector("#gallery-items-nav div:nth-child(" + current_gallery_item + ")").classList.add("gallery-items-nav-active");
+    document.querySelector("#gallery-items div:nth-child(" + current_gallery_item + ")").style.display = "flex";
+
+}
+function changeLandingPageContent(gallery_item) {
+    clearInterval(changeLandingPageContentInterval);
+    clearTimeout(changeLandingPageContentTimeout);
+
+    document.querySelector("#gallery-items-nav div:nth-child(" + current_gallery_item + ")").classList.remove("gallery-items-nav-active");
+    document.querySelector("#gallery-items div:nth-child(" + current_gallery_item + ")").style.display = "none";
+
+    current_gallery_item = gallery_item;
+
+    document.querySelector("#gallery-items-nav div:nth-child(" + current_gallery_item + ")").classList.add("gallery-items-nav-active");
+    document.querySelector("#gallery-items div:nth-child(" + current_gallery_item + ")").style.display = "flex";
+
+    changeLandingPageContentTimeout = setTimeout(setAutoChangeLandingPage, 6000);
+}
+
