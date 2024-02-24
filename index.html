@@ -14,7 +14,28 @@
 <body>
     <header>
         <img id="logo" src="assets/logo.png" alt="Transdzwig Zawadzcy S.J."/>
-        <img id="menu-icon" src="assets/menu.png" alt="menu"/>
+        <img id="menu-icon" onclick="showMenu()" src="assets/menu.png" alt="menu"/>
+        <div id="menu" style="display: none">
+            <div id="exit">
+                <img id="exit-icon" onclick="hideMenu()" src="assets/exit.png" alt="exit menu"/>
+            </div>
+            <div id="menu-nav">
+                <h1>Menu</h1>
+                <ul>
+                    <li>Strona główna <img src="assets/Next.png" alt="go"></li>
+                    <li>Oferta <img src="assets/Next.png" alt="go"></li>
+                    <li>O firmie <img src="assets/Next.png" alt="go"></li>
+                    <li>Fundusze unijne <img src="assets/Next.png" alt="go"></li>
+                    <li>Kontakt <img src="assets/Next.png" alt="go"></li>
+                </ul>
+            </div>
+            <div id="menu-language">
+                <h1>Język</h1>
+                <ul>
+                    <li><span><img src="assets/globe.png"> Polski</span> <img src="assets/Next.png" alt="go"></li>
+                </ul>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="#landing-page">Strona główna</a></li>

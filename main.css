@@ -28,11 +28,16 @@ body {
 
 h1 {
     font-weight: 700;
+    font-size: 2rem;
 }
 
 button {
     width: 144px;
     height: 44px;
+}
+
+ul {
+    list-style-type: none;
 }
 
 a:hover, a:visited, a:link, a:active

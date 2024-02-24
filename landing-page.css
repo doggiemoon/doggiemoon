@@ -14,7 +14,7 @@
 }
 
 #gallery-items h1 {
-    font-size: 3rem;
+    font-size: 3rem !important;
 }
 
 #gallery-items p {
@@ -39,31 +39,31 @@
 
 #gallery-item-1 {
     background-image:
-            linear-gradient(0deg, rgba(36,36,36,0.7) 0%, rgba(36,36,36,0.7) 0%),
+            radial-gradient(circle, rgba(36,36,36,0.7) 0%, rgba(36,36,36,0.7) 80%, rgba(36,36,36,0.9) 90%),
             url('assets/mechanics.png');
 }
 
 #gallery-item-2 {
     background-image:
-            linear-gradient(0deg, rgba(36,36,36,0.7) 0%, rgba(36,36,36,0.7) 0%),
+            radial-gradient(circle, rgba(36,36,36,0.7) 0%, rgba(36,36,36,0.7) 80%, rgba(36,36,36,0.9) 90%),
             url('assets/mechanics1.png');
 }
 
 #gallery-item-3 {
     background-image:
-            linear-gradient(0deg, rgba(36,36,36,0.7) 0%, rgba(36,36,36,0.7) 0%),
+            radial-gradient(circle, rgba(36,36,36,0.7) 0%, rgba(36,36,36,0.7) 80%, rgba(36,36,36,0.9) 90%),
             url('assets/mechanics2.png');
 }
 
 #gallery-item-4 {
     background-image:
-            linear-gradient(0deg, rgba(36,36,36,0.7) 0%, rgba(36,36,36,0.7) 0%),
+            radial-gradient(circle, rgba(36,36,36,0.7) 0%, rgba(36,36,36,0.7) 80%, rgba(36,36,36,0.9) 90%),
             url('assets/mechanics.png');
 }
 
 #gallery-item-5 {
     background-image:
-            linear-gradient(0deg, rgba(36,36,36,0.7) 0%, rgba(36,36,36,0.7) 0%),
+            radial-gradient(circle, rgba(36,36,36,0.7) 0%, rgba(36,36,36,0.7) 80%, rgba(36,36,36,0.9) 90%),
             url('assets/mechanics.png');
 }
 

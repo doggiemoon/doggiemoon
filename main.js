@@ -62,4 +62,10 @@ function changeLandingPageContent(gallery_item) {
 
     changeLandingPageContentTimeout = setTimeout(setAutoChangeLandingPage, 6000);
 }
+function showMenu() {
+    document.querySelector("#menu").style.display = "flex";
+}
 
+function hideMenu() {
+    document.querySelector("#menu").style.display = "none";
+}
