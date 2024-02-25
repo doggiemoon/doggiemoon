@@ -30,7 +30,7 @@ let changeLandingPageContentInterval = null;
 let changeLandingPageContentTimeout = null;
 
 function setAutoChangeLandingPage() {
-    changeLandingPageContentInterval = setInterval(autoChangeLandingPageContent, 5000);
+    changeLandingPageContentInterval = setInterval(autoChangeLandingPageContent, 6000);
 }
 
 setAutoChangeLandingPage();
@@ -60,12 +60,14 @@ function changeLandingPageContent(gallery_item) {
     document.querySelector("#gallery-items-nav div:nth-child(" + current_gallery_item + ")").classList.add("gallery-items-nav-active");
     document.querySelector("#gallery-items div:nth-child(" + current_gallery_item + ")").style.display = "flex";
 
-    changeLandingPageContentTimeout = setTimeout(setAutoChangeLandingPage, 6000);
+    changeLandingPageContentTimeout = setTimeout(setAutoChangeLandingPage, 10000);
 }
 function showMenu() {
     document.querySelector("#menu").style.display = "flex";
+    document.querySelector("body").style.overflow = "hidden";
 }
 
 function hideMenu() {
     document.querySelector("#menu").style.display = "none";
+    document.querySelector("body").style.overflow = "auto";
 }

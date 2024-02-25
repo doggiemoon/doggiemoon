@@ -27,7 +27,7 @@
 #company-existence {
     background-image:
             linear-gradient(to right, rgba(36,36,36,1) 0%, rgba(36,36,36,0.85) 45%, rgba(36,36,36,0.66) 100%),
-            url('assets/mechanics.png');
+            url('assets/mechanics1.png');
     width: 100%;
     display: flex;
     justify-content: center;
@@ -37,6 +37,5 @@
 }
 
 #company-existence > h1 {
-    font-size: 2rem;
     text-align: center;
 }

@@ -39,7 +39,7 @@ nav ul {
     z-index: 10000;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     flex-direction: column;
     gap: 4rem;
@@ -62,7 +62,7 @@ nav ul {
     gap: 1rem;
 }
 
-#menu li {
+#menu a {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,7 +86,6 @@ nav ul {
     justify-content: flex-end;
     align-items: center;
 }
-
 
 
 @media screen and (min-width: 700px) {
