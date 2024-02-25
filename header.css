@@ -74,6 +74,12 @@ nav ul {
     gap: 1rem;
 }
 
+#menu-language li {
+    padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+    border: #4D4D4D 1px solid;
+    background-color: #2B2B2B;
+}
+
 #menu-language span {
     display: flex;
     align-items: center;
