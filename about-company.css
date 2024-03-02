@@ -5,25 +5,6 @@
     justify-content: center;
 }
 
-#about-company-content-wrapper {
-    background-image:
-            linear-gradient(to right, rgba(36,36,36,1) 0%, rgba(36,36,36,0.85) 45%, rgba(36,36,36,0.66) 100%),
-            url('assets/mechanics.png');
-}
-
-#about-company-content {
-    display: flex;
-    margin: 2rem;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-#about-company-content > p {
-    max-width: 40%;
-}
-
 #company-existence {
     background-position: left;
     background-repeat: no-repeat;
@@ -33,6 +14,8 @@
             url('assets/mechanics3.png');
     width: 100%;
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
     padding: 6rem 2rem;
@@ -41,4 +24,14 @@
 
 #company-existence > h1 {
     text-align: center;
+}
+
+#company-existence > p {
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+    #company-existence > p {
+        max-width: 50%;
+    }
 }
