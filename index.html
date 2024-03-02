@@ -26,7 +26,7 @@
                     <li onclick="hideMenu()"><a href="#gallery-items-nav">Oferta <img src="assets/Next.png" alt="go"></a></li>
                     <li onclick="hideMenu()"><a href="#about-company">O firmie <img src="assets/Next.png" alt="go"></a></li>
                     <li onclick="hideMenu()"><a>Fundusze unijne <img src="assets/Next.png" alt="go"></a></li>
-                    <li onclick="hideMenu()"><a>Kontakt <img src="assets/Next.png" alt="go"></a></li>
+                    <li onclick="hideMenu()"><a href="contact.html">Kontakt <img src="assets/Next.png" alt="go"></a></li>
                 </ul>
             </div>
             <div id="menu-language">
@@ -42,19 +42,31 @@
                 <li><a href="#gallery-items-nav">Oferta</a></li>
                 <li><a href="#about-company">O firmie</a></li>
                 <li>Fundusze unijne</li>
-                <li>Kontakt</li>
+                <li><a href="contact.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="landing-page">
-            <div id="select-language" style="display: none">
-                <div>PL</div>
-                <div>EN</div>
-                <div>RU</div>
-            </div>
+        <div id="select-language" style="display: none">
+            <div>PL</div>
+            <div>EN</div>
+            <div>RU</div>
+        </div>
 
+        <div id="social-media">
+            <a href="https://www.facebook.com/transdzwig.zawadzcy/" target="_blank">
+                <img src="assets/facebook-icon.png" alt="facebook"/>
+            </a>
+            <a href="https://www.tiktok.com/@transdzwig" target="_blank">
+                <img src="assets/tiktok-icon.png" alt="tiktok"/>
+            </a>
+            <a href="https://www.instagram.com/transdzwig/" target="_blank">
+                <img src="assets/instagram-icon.png" alt="instagram"/>
+            </a>
+        </div>
+
+        <section id="landing-page">
             <div id="gallery-items">
                 <div id="gallery-item-1" class="gallery-item">
                     <h1>POMOC DROGOWA 24/7</h1>
@@ -62,7 +74,7 @@
                         Wsparciem drogowym zajmujemy się od początku istnienia firmy,
                         a 29 lat praktyki sprawiły, że o pomocy drogowej wiemy prawie wszystko.
                     </p>
-                    <button class="ghost-button">Kontakt<img src="assets/Next.png"/></button>
+                    <button class="ghost-button" onclick="document.location.href='contact.html'">Kontakt<img src="assets/Next.png"/></button>
                 </div>
                 <div id="gallery-item-2" class="gallery-item" style="display: none">
                     <h1>LOGISTYKA, WYNAJEM SPRZETU</h1>
@@ -70,7 +82,7 @@
                         Oferujemy wynajem sprzętu specjalistycznego,
                         w ramach którego zapewniamy wsparcie dźwigowe i podnośnikowe.
                     </p>
-                    <button class="ghost-button">Kontakt<img src="assets/Next.png"/></button>
+                    <button class="ghost-button" onclick="document.location.href='contact.html'">Kontakt<img src="assets/Next.png"/></button>
                 </div>
                 <div id="gallery-item-3" class="gallery-item" style="display: none">
                     <h1>SKLEP</h1>
@@ -78,13 +90,13 @@
                         Prowadzimy sprzedaż nowych oraz używanych części do samochodów osobowych
                         i dostawczych najpopularniejszych światowych marek.
                     </p>
-                    <button class="ghost-button">Kontakt<img src="assets/Next.png"/></button>
+                    <button class="ghost-button" onclick="document.location.href='contact.html'">Kontakt<img src="assets/Next.png"/></button>
                 </div>
                 <div id="gallery-item-4" class="gallery-item" style="display: none">
                     <h1>STACJA KONTROLI POJAZDOW</h1>
                     <p>Prowadzimy stację kontroli pojazdów, oferującą przeglądy samochodów do 3,5 tony.
                     </p>
-                    <button class="ghost-button">Kontakt<img src="assets/Next.png"/></button>
+                    <button class="ghost-button" onclick="document.location.href='contact.html'">Kontakt<img src="assets/Next.png"/></button>
                 </div>
                 <div id="gallery-item-5" class="gallery-item" style="display: none">
                     <h1>KASACJA</h1>
@@ -92,7 +104,7 @@
                         Skupujemy samochody wszystkich marek i roczników,
                         niezależnie od ich stanu technicznego – przyjmujemy także pojazdy uszkodzone.
                     </p>
-                    <button class="ghost-button">Kontakt<img src="assets/Next.png"/></button>
+                    <button class="ghost-button" onclick="document.location.href='contact.html'">Kontakt<img src="assets/Next.png"/></button>
                 </div>
             </div>
 
@@ -103,24 +115,11 @@
                 <div onclick="changeLandingPageContent(4)"></div>
                 <div onclick="changeLandingPageContent(5)"></div>
             </div>
-
-            <div id="social-media">
-                <a href="https://www.facebook.com/transdzwig.zawadzcy/" target="_blank">
-                    <img src="assets/facebook-icon.png" alt="facebook"/>
-                </a>
-                <a href="https://www.tiktok.com/@transdzwig" target="_blank">
-                    <img src="assets/tiktok-icon.png" alt="tiktok"/>
-                </a>
-                <a href="https://www.instagram.com/transdzwig/" target="_blank">
-                    <img src="assets/instagram-icon.png" alt="instagram"/>
-                </a>
-            </div>
         </section>
 
         <section id="offers">
             <div class="section-header">
                 <h1>Oferta</h1>
-                <div class="underline"></div>
             </div>
 
             <div class="offer">
@@ -175,7 +174,6 @@
         <section id="about-company">
             <div class="section-header">
                 <h1>O firmie</h1>
-                <div class="underline"></div>
             </div>
 
             <div id="company-existence">

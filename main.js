@@ -7,6 +7,15 @@ window.onscroll = function () {
     }
 }
 
+window.onload = function () {
+    if (window.scrollY >= 1) {
+        let headerElement = document.querySelector("header").classList.add("header-after-scroll");
+    }
+    else {
+        let headerElement = document.querySelector("header").classList.remove("header-after-scroll");
+    }
+}
+
 let reveals = document.querySelectorAll(".reveal");
 function reveal() {
     for (let i = 0; i < reveals.length; i++) {
