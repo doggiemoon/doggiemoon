@@ -59,7 +59,7 @@ a:hover, a:visited, a:link, a:active
 }
 
 .filled-button {
-    color: var(--second-accent-color);
+    color: #242424;
     background-color: var(--accent-color);
     border: none;
     font-family: "Montserrat", sans-serif;
@@ -67,6 +67,7 @@ a:hover, a:visited, a:link, a:active
     font-size: 1rem;
     border-radius: 3px;
     cursor: pointer;
+    position: relative;
 }
 
 button > img {
